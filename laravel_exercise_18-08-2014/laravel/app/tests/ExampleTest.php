@@ -1,6 +1,6 @@
 <?php
 
-class ExampleTest extends TestCase {
+class ExampleTest extends PHPUnit_Framework_TestCase {
 
 	/**
 	 * A basic functional test example.
