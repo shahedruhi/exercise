@@ -12,7 +12,7 @@
     <title>GORZON SOLUTIONS PVT. LTD</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="common_features/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
@@ -33,30 +33,19 @@
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">GORZON SOLUTIONS PVT. LTD</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="dashboard.php">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
+<div class="header">
+
+    <?php include 'common_features/header.php' ?>
+
 </div>
 
 <div class="container">
+    
+    <div id="banner">
 
-    <img class="img-responsive" alt="Responsive image" src="image/banner.jpg" />
+        <?php include 'common_features/banner_setter.php' ?>
+
+    </div>
 
     <br>
     <br>
@@ -118,10 +107,17 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 
+<br>
+<br>
+<br>
+
+<div class="footer">
+
+    <?php include 'common_features/footer.php' ?>
+
+</div>
+
 
 </body>
-<br>
-<br>
-<br>
-<br>
+
 </html>

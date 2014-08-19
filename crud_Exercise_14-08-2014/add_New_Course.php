@@ -29,17 +29,17 @@ if(isset($_POST["course_Title"]) && isset($_POST["course_Code"])){
     <title>GORZON SOLUTIONS PVT. LTD</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="common_features/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
+    <link href="common_features/css/starter-template.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="common_features/js/ie-emulation-modes-warning.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="common_features/js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -50,32 +50,19 @@ if(isset($_POST["course_Title"]) && isset($_POST["course_Code"])){
 
 <body>
 
+<div class="header">
 
+    <?php include 'common_features/header.php' ?>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">GORZON SOLUTIONS PVT. LTD</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="dashboard.php">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
 </div>
 
 <div class="container">
 
-    <img class="img-responsive" alt="Responsive image" src="image/banner.jpg" />
+    <div id="banner">
+
+        <?php include 'common_features/banner_setter.php' ?>
+
+    </div>
 
     <br>
     <br>
@@ -115,13 +102,22 @@ if(isset($_POST["course_Title"]) && isset($_POST["course_Code"])){
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="common_features/js/jquery.js"></script>
+<script src="common_features/js/bootstrap.js"></script>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+
+<div class="footer">
+
+    <?php include 'common_features/footer.php' ?>
+
+</div>
 
 </body>
-<br>
-<br>
-<br>
-<br>
 </html>
