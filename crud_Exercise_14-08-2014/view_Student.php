@@ -58,9 +58,9 @@
             <?php
             $student_Id = $_GET["student_Id"];
 
-            mysql_connect('localhost','root','');
+            mysql_connect('localhost','c9shahedruhi','tintin08');
 
-            mysql_select_db('ftfl');
+            mysql_select_db('c9shahedruhi1');
 
             $qury = mysql_query("SELECT students.id,students.name,courses.title
                     from courses

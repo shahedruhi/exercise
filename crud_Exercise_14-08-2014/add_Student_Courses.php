@@ -1,7 +1,7 @@
 <?php
 $student_Name = $_POST['student_Name'];
-mysql_connect('localhost','root','');
-mysql_select_db('ftfl');
+mysql_connect('localhost','c9shahedruhi','tintin08');
+mysql_select_db('c9shahedruhi1');
 mysql_query("insert into students (name) values ('$student_Name')");
 
 $result = mysql_query("select id from students where name = '$student_Name' ");

@@ -1,7 +1,7 @@
 <?php
 $student_Id = $_GET["student_Id"];
-mysql_connect('localhost','root','');
-mysql_select_db('ftfl');
+mysql_connect('localhost','c9shahedruhi','tintin08');
+mysql_select_db('c9shahedruhi1');
 
 $qury = mysql_query("SELECT * from students WHERE id=$student_Id");
 
@@ -106,8 +106,7 @@ if(isset($_POST["course_Title"]))
 
                     <select class="form-control" name="course_Title[]" multiple="multiple">
                         <?php
-                        //$connect = mysql_connect('localhost','root','');
-                        //$db = mysql_select_db('ftfl',$connect);
+    
                         $result = mysql_query("SELECT title from courses");
                         while($row = mysql_fetch_array($result))
                         {

@@ -65,8 +65,8 @@
 
                     <select class="form-control" name="student_Name" single="single">
                         <?php
-                        $connect = mysql_connect('localhost','root','');
-                        $db = mysql_select_db('ftfl',$connect);
+                        $connect = mysql_connect('localhost','c9shahedruhi','tintin08');
+                        $db = mysql_select_db('c9shahedruhi1',$connect);
                         $result = mysql_query("SELECT name from students");
                         while($row = mysql_fetch_array($result))
                         {
