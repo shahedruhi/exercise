@@ -9,7 +9,7 @@ mysql_select_db('c9shahedruhi1');
 
 if(isset($_POST["course_Title"]) && isset($_POST["course_Code"])){
     $course_Title = $_POST["course_Title"];
-    $course_Code = $_POST["course_Title"];
+    $course_Code = $_POST["course_Code"];
 
     mysql_query("INSERT into courses (title,code) values ('$course_Title','$course_Code')");
     header('location: view_All_Courses.php?msg=add');
